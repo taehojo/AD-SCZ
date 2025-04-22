@@ -6,9 +6,9 @@ set -e
 SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
 PROJECT_ROOT=$(cd "${SCRIPT_DIR}/.." &> /dev/null && pwd)
 
-GWAS_PROC_DIR="${PROJECT_ROOT}/pipeline_output_no_clumping/processed_gwas"
+GWAS_PROC_DIR="${PROJECT_ROOT}/pipeline_output/processed_gwas"
 ADSP_DIR="/path/to/your/adsp/plink/files" # !!! EDIT THIS
-OUTPUT_DIR="${PROJECT_ROOT}/pipeline_output_no_clumping"
+OUTPUT_DIR="${PROJECT_ROOT}/pipeline_output"
 LOG_DIR="${OUTPUT_DIR}/logs"
 LOG_FILE="${LOG_DIR}/pipeline.log"
 
@@ -36,7 +36,7 @@ mkdir -p "${OUTPUT_DIR}"
 check_success
 mkdir -p "${LOG_DIR}"
 check_success
-echo "Starting pipeline script (No Clumping Version) at $(date)" > "${LOG_FILE}"
+echo "Starting pipeline script at $(date)" > "${LOG_FILE}"
 check_success
 
 # --- Step 0: Update ADSP BIM Files ---

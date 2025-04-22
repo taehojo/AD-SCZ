@@ -5,8 +5,8 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # --- Directory Paths (!!! EDIT THESE FOR YOUR ENVIRONMENT !!!) ---
 GWAS_DIR = os.path.join(PROJECT_ROOT, "data", "raw_gwas")
 ADSP_DIR = "/path/to/your/adsp/plink/files" # !!! EDIT THIS
-PIPELINE_OUTPUT_DIR = os.path.join(PROJECT_ROOT, "pipeline_output_no_clumping")
-ML_RESULTS_DIR = os.path.join(PROJECT_ROOT, "ml_results_iterative_knn_v1")
+PIPELINE_OUTPUT_DIR = os.path.join(PROJECT_ROOT, "pipeline_output")
+ML_RESULTS_DIR = os.path.join(PROJECT_ROOT, "results") 
 
 # --- Resource Files (!!! EDIT THIS FOR YOUR ENVIRONMENT !!!) ---
 CHAIN_FILE = os.path.join(PROJECT_ROOT, "resources", "hg19ToHg38.over.chain.gz") # !!! EDIT THIS
@@ -18,8 +18,13 @@ PYTHON_EXEC = "python3"
 
 # --- GWAS Processing Parameters ---
 GWAS_PROC_OUTPUT_DIR = os.path.join(PIPELINE_OUTPUT_DIR, "processed_gwas")
-AD_FILENAME = "PGCALZ2sumstatsExcluding23andMe.txt" # !!! EDIT IF DIFFERENT
-SCZ_FILENAME = "PGC3_SCZ_wave3.primary.autosome.public.v3.vcf.tsv" # !!! EDIT IF DIFFERENT
+
+# !!! EDIT THESE Filenames: Use the actual filenames of the downloaded PGC summary statistics files !!!
+AD_FILENAME = "your_ad_gwas_summary_file" #  GWAS Data References AD: Wightman, Douglas P., et al. "A genome-wide association study with 1,126,563 individuals identifies new risk loci for Alzheimer¡¯s disease." Nature genetics 53.9 (2021): 1276-1282. (PGC-ALZ2)
+
+SCZ_FILENAME = "your_scz_gwas_summary_file" # GWAS Data References SCZ: Trubetskoy, Vassily, et al. "Mapping genomic loci implicates genes and synaptic biology in schizophrenia." Nature 604.7906 (2022): 502-508. (PGC3)
+
+# Column names for GWAS files (Verify these match your specific files)
 CHR_COL_AD = "chr"
 POS_COL_AD = "PosGRCh37"
 P_COL_AD = "p"
