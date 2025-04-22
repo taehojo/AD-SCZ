@@ -1,4 +1,4 @@
-# AD/SCZ Iterative Feature Addition Project
+# AD/SCZ Cross-Disorder ML Prediction
 
 ## Overview
 
