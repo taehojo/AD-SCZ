@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project uses Machine Learning (ML) to test if adding Schizophrenia (SCZ) associated genetic variants (SNPs) improves Alzheimer's Disease (AD) risk prediction compared to using AD SNPs alone. It utilizes AD/SCZ GWAS summary statistics (PGC-ALZ2/PGC3) and ADSP WGS reference genotypes. Adding the top 50 SCZ SNPs significantly improved the best model's AUC (0.603 -> 0.640).
+This project uses Machine Learning (ML) to test if adding Schizophrenia (SCZ) associated genetic variants (SNPs) improves Alzheimer's Disease (AD) risk prediction compared to using AD SNPs alone. It utilizes PGC AD/SCZ GWAS summary statistics and ADSP WGS reference genotypes. 
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ This project uses Machine Learning (ML) to test if adding Schizophrenia (SCZ) as
 
 1.  **Clone:**
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/taehojo/AD-SCZ.git
     cd your-project-name
     ```
 2.  **Create Environment:**
