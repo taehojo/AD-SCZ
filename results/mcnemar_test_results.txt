@@ -1,0 +1,13 @@
+McNemar's Test Results: Comparing XGBoost
+  Baseline (N=0) vs. Best Combination (N=50)
+
+Contingency Table:
+          | BestN Corr | BestN Incr |
+----------|------------|------------|
+Base Corr |    736     |    128     |
+Base Incr |    184     |    436     |
+
+Test Result (exact=False):
+  Statistic: 9.6955
+  P-value:   0.001847
+  Result:    Significant (p < 0.05)

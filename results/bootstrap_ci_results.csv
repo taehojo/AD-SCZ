@@ -1,0 +1,7 @@
+Metric,Baseline_Value,Baseline_CI_Lower,Baseline_CI_Upper,BestN_Value,BestN_CI_Lower,BestN_CI_Upper
+AUC,0.6032,0.5745,0.6335,0.6400,0.6124,0.6688
+Accuracy,0.5822,0.5566,0.6085,0.6199,0.5963,0.6429
+F1 Score,0.6630,0.6373,0.6876,0.6921,0.6674,0.7153
+Precision,0.6187,0.5892,0.6492,0.6483,0.6175,0.6772
+Recall (Sensitivity),0.7143,0.6828,0.7444,0.7424,0.7123,0.7725
+Specificity,0.4032,0.3654,0.4418,0.4540,0.4168,0.4930

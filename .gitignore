@@ -62,7 +62,6 @@ data/
 logs/
 pipeline_output_*/
 01-ml_results_*/
-results/
 config/config.py
 config/config.yaml
 *.conda_backup

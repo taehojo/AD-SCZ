@@ -1,0 +1,4 @@
+Model,Baseline AUC (N=0),Best N,Best AUC,AUC at Max N (500),Improvement over Baseline
+XGBoost,0.6032,50,0.6400,0.6055,0.0368
+Random Forest,0.5958,40,0.6063,0.5942,0.0105
+Logistic Regression,0.5732,10,0.5751,0.5748,0.0018
